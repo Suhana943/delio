@@ -9,6 +9,12 @@
     <!DOCTYPE html>
 <html lang="en">
 <head>
+  
+  <title>My Awesome Website</title>
+  <meta name="description" content="Learn how to build and deploy sites.">
+  <meta name="robots" content="index, follow">
+
+
     <style>
       /* ===== BASE STYLES ===== */
 :root {
@@ -1621,21 +1627,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
   </script>
-  <script>
-    function voiceWelcome() {
-      const message = "Welcome! I am your AI assistant powered by TensorFlow.js.";
-
-      // Update text on screen
-      document.getElementById("assistant-msg").textContent = message;
-
-      // Speak the message using SpeechSynthesis
-      const utterance = new SpeechSynthesisUtterance(message);
-      utterance.lang = 'en-US';
-      utterance.rate = 1;
-      utterance.pitch = 1;
-      speechSynthesis.speak(utterance);
-    }
-  </script>
+  
 </body>
 </html>
 </body>
